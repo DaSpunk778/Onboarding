@@ -18,7 +18,7 @@ export default function LoginPage() {
     <div className="min-h-screen  bg-linear-to-b from-[#1D1D1D] via-[#232222] via-10% to-[#181717] text-white flex flex-col">
       <div className="w-full bg-linear-to-b from-[#1D1D1D] via-[#1e1e1e] via-15% to-[#000000]  flex flex-col min-h-screen">
     
-        <div className="flex items-center justify-between px-5 py-4 border-b border-[#303030]">
+        <div className="flex items-center justify-between px-5 py-4 border-b border-[#303030] bg-[#151515]">
           <RiMenu4Fill className="w-6 h-6 text-white" />
           <h1 className=" text-[#FFFFFF] text-sm font-inter font-semibold">Login</h1>
           <div className="w-6 h-0.5 " />
