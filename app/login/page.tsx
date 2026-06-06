@@ -33,14 +33,14 @@ export default function LoginPage() {
             <input 
               type="tel"
               placeholder="+234 9000000001"
-              className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+              className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <label className="text-[#888888] font-inter text-[13.5px] font-normal tracking-normal mb-2 mt-4">Password</label>
             <div className="relative mb-2">
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="********"
-                className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141]  outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+                className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141]  outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
               />
               <button 
               className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
@@ -52,7 +52,7 @@ export default function LoginPage() {
  
 
               {hasError && (
-                <p className="text-[#FF7366] text-[12px] mb-2 mt-2">
+                <p className="text-danger text-[12px] mb-2 mt-2">
                   Incorrect Password! Try again or Click forgot password to reset your password
                 </p>
               )}
@@ -67,7 +67,7 @@ export default function LoginPage() {
               </div>
 
               <button 
-                className="flex flex-row items-center justify-center w-88 h-11.5 rounded-xl p-[8px_24px] gap-2 bg-[#D9E012] text-[#3f3e3e] font-inter text-[14px] font-bold tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#D9E012]/50 mt-3"
+                className="flex flex-row items-center justify-center w-88 h-11.5 rounded-xl p-[8px_24px] gap-2 bg-primary text-[#3f3e3e] font-inter text-[14px] font-bold tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50 mt-3"
                 onClick={() => setHasError(true)}
               >
                 Login

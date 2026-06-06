@@ -36,13 +36,13 @@ export default function PasswordResetPage() {
             <input
              type="tel"
              placeholder="0000000001"
-             className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white placeholder-[#424141] bg outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012] mb-8"
+             className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white placeholder-[#424141] bg outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary mb-8"
           />
 
 
           <button
           onClick={() => router.push("/create-password")}
-          className="w-full h-11.5 rounded-xl p-[8px_24px] bg-[#D9E012] text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#D9E012]/50"
+          className="w-full h-11.5 rounded-xl p-[8px_24px] bg-primary text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50"
           >
             Send OTP
           </button>

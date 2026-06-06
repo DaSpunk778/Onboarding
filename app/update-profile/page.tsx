@@ -43,7 +43,7 @@ export default function UpdateProfilePage() {
             <input
                 type="email"
                 placeholder="test@tester.com"
-                className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white  placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012] mb-4"
+                className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white  placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary mb-4"
             />
 
             {/*first name and last name fields*/}
@@ -53,7 +53,7 @@ export default function UpdateProfilePage() {
                 <input
                     type="text"
                     placeholder="John"
-                    className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white  placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+                    className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white  placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
                 />
                 </div>
                 <div className="flex flex-col flex-1">
@@ -61,7 +61,7 @@ export default function UpdateProfilePage() {
                 <input
                     type="text"
                     placeholder="Doe"
-                    className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white   placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+                    className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white   placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
                 />
                 </div>
           </div>
@@ -71,19 +71,19 @@ export default function UpdateProfilePage() {
             <input
                 type="tel"
                 placeholder="+234 9000000001"
-                className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012] mb-4"
+                className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary mb-4"
             />
 
             <label className="text-[#888888] text-xs mb-1">Date of Birth</label>
           <input
             type="text"
             placeholder="DD/MM/YY"
-            className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white  placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012] mb-4"
+            className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white  placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary mb-4"
           />
 
         <button
             onClick={() => router.push("/create-account")}
-            className="w-full h-11.5 rounded-xl p-[8px_24px] bg-[#D9E012] text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#D9E012]/50 mb-6 mt-20"
+            className="w-full h-11.5 rounded-xl p-[8px_24px] bg-primary text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50 mb-6 mt-20"
           >
             Update
           </button>

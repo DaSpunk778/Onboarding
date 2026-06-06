@@ -43,7 +43,7 @@ export default function CreatePasswordPage() {
             <input
               type={showNewPassword ? "text" : "password"}
               placeholder="••••••••"
-              className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+              className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <button
               className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -61,7 +61,7 @@ export default function CreatePasswordPage() {
             <input
               type={showConfirmPassword ? "text" : "password"}
               placeholder="••••••••"
-              className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-[#D9E012] focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+              className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <button
               className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
@@ -84,7 +84,7 @@ export default function CreatePasswordPage() {
     
           <button
             onClick={() => router.push("/reset-success")}
-            className="w-full h-11.5 rounded-xl p-[8px_24px] bg-[#D9E012] text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#D9E012]/50 mb-6 mt-18"
+            className="w-full h-11.5 rounded-xl p-[8px_24px] bg-primary text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50 mb-6 mt-18"
           >
             Reset Password
           </button>

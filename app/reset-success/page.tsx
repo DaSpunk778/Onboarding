@@ -23,8 +23,8 @@ export default function ResetSuccessPage() {
         {/* vertical */}
         <div className="flex flex-col flex-1 items-center justify-start pt-38 px-5 text-center gap-4">
 
-            <div className="w-11.25 h-11.25 rounded-full bg-[#1E3211] flex items-center justify-center mb-8">
-                <LockKeyholeOpen className="w-5 h-5 text-[#D9E012]" />
+            <div className="w-11.25 h-11.25 rounded-full bg-primary-dark flex items-center justify-center mb-8">
+                <LockKeyholeOpen className="w-5 h-5 text-primary" />
             </div>
 
             <h2 className="font-inter text-[16px] font-semibold leading-[0.3] tracking-[-0.02em] text-[#888888] ml-2 ">
@@ -36,7 +36,7 @@ export default function ResetSuccessPage() {
 
              <button
                 onClick={() => router.push("/update-profile")}
-                className="w-full h-11.5 rounded-xl p-[8px_24px] bg-[#D9E012] text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-[#D9E012]/50 mt-4"
+                className="w-full h-11.5 rounded-xl p-[8px_24px] bg-primary text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50 mt-4"
             >
             Login
           </button>
