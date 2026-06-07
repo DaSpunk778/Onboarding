@@ -46,7 +46,7 @@ export default function LoginPage() {
               className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
               onClick={() => setShowPassword(!showPassword)}
               >
-                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                 {showPassword ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" /> }
               </button>
               </div>
  
@@ -82,21 +82,21 @@ export default function LoginPage() {
 
               <div className="flex gap-3 justify-center mt-3 ">
 
-              <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold">
+              <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold cursor-pointer">
                 <div className="flex items-center justify-center -mt-px -ml-px w-6 h-6 rounded-full border border-solid border-[#F6F2F2] bg-[#1877F2]">
                     <FaFacebookF className="w-4 h-4 text-white cursor-pointer" />
                   </div>
                     Facebook
                 </button>
 
-               <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold">
+               <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold cursor-pointer">
                   <div className="flex items-center justify-center -mt-px -ml-px w-6 h-6 rounded-full border border-solid border-[#F6F2F2] bg-white">
                     <FcGoogle className="w-5.25 h-5.25 cursor-pointer" />
                   </div>
                     Google
                 </button>
 
-                <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold">
+                <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold cursor-pointer">
                   <div className="flex items-center justify-center -mt-px -ml-px w-6 h-6 rounded-full border border-solid border-[#F6F2F2]">
                     <BsTwitterX className="w-3 h-3 text-[#F6F2F2] cursor-pointer" />
                   </div>
