@@ -35,7 +35,7 @@ export default function CreatePasswordPage() {
     if (strength === "weak") {
       setStrength("strong")
     } else {
-      router.push("/create-password-confirm")
+      router.push("/login")
     }
   }
 
