@@ -46,7 +46,7 @@ export default function CreatePasswordPage() {
               className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <button
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
               onClick={() => setShowNewPassword(!showNewPassword)}
             >
               {showNewPassword ?  <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" /> }
@@ -64,7 +64,7 @@ export default function CreatePasswordPage() {
               className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <button
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             >
               {showConfirmPassword ?  <Eye className="w-4 h-4" /> : <EyeClosed /> }

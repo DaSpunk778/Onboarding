@@ -35,7 +35,7 @@ export default function CreatePasswordPage() {
     if (strength === "weak") {
       setStrength("strong")
     } else {
-      router.push("/login")
+      router.push("/otp")
     }
   }
 
@@ -75,7 +75,7 @@ export default function CreatePasswordPage() {
               className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] pr-10 bg-[#222222] text-white placeholder-zinc-500 outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <button
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
               onClick={() => setShowPassword(!showPassword)}
             >
               {showPassword ?  <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}

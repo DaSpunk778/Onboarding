@@ -43,10 +43,10 @@ export default function LoginPage() {
                 className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141]  outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
               />
               <button 
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer"
               onClick={() => setShowPassword(!showPassword)}
               >
-                 {showPassword ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" /> }
+                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               </button>
               </div>
  
@@ -67,7 +67,7 @@ export default function LoginPage() {
               </div>
 
               <button 
-                className="flex flex-row items-center justify-center w-88 h-11.5 rounded-xl p-[8px_24px] gap-2 bg-primary text-[#3f3e3e] font-inter text-[14px] font-bold tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50 mt-3"
+                className="flex flex-row items-center justify-center overflow-hidden w-full h-11.5 rounded-xl p-[8px_24px] gap-2 bg-primary text-[#3f3e3e] font-inter text-[14px] font-bold tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50 mt-3"
                 onClick={() => setHasError(true)}
               >
                 Login
@@ -80,7 +80,7 @@ export default function LoginPage() {
               </div>
 
 
-              <div className="flex gap-3 justify-center mt-3 ">
+           <div className="flex flex-wrap gap-3 justify-center mt-3 ">
 
               <button className="flex flex-row items-center w-fit h-fit rounded-[100px] border border-solid border-[#484848] p-[4px_8px_4px_4px] gap-1 text-white text-[13px] font-inter font-semibold cursor-pointer">
                 <div className="flex items-center justify-center -mt-px -ml-px w-6 h-6 rounded-full border border-solid border-[#F6F2F2] bg-[#1877F2]">
@@ -102,7 +102,6 @@ export default function LoginPage() {
                   </div>
                   Twitter
                 </button>
-                 
                 
                 
               </div>
