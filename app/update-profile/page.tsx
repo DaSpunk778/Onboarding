@@ -23,7 +23,7 @@ export default function UpdateProfilePage() {
         <div className="min-h-screen bg-linear-to-b from-[#1D1D1D] via-[#232222] via-10% to-[#181717] text-white flex flex-col items-center">
         <div className="w-full max-w-97.5 bg-linear-to-b from-[#1D1D1D] via-[#1e1e1e] via-15% to-[#000000] flex flex-col min-h-screen">
 
-        <div className="flex items-center justify-between px-5 py-4 border-b border-[#303030] bg-[#151515]">
+        <div className="sticky top-0 z-50  flex items-center justify-between px-5 py-4 border-b border-[#303030] bg-[#151515]">
           <button onClick={() => router.back()}> 
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
