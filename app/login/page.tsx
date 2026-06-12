@@ -14,6 +14,16 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [hasError, setHasError] = useState(false)
 
+const handlePhoneInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const value = e.target.value
+  // only allow + at start and numbers 0-9
+  if (/^[+]?[0-9]*$/.test(value)) {
+    e.target.value = value
+  } else {
+    e.target.value = value.replace(/[^0-9+]/g, "")
+  }
+}
+
   return (
     <div className="min-h-screen  bg-linear-to-b from-[#1D1D1D] via-[#232222] via-10% to-[#181717] text-white flex flex-col">
       <div className="w-full bg-linear-to-b from-[#1D1D1D] via-[#1e1e1e] via-15% to-[#000000]  flex flex-col min-h-screen">
@@ -31,8 +41,11 @@ export default function LoginPage() {
             </p>
             <label className="text-[#888888] font-inter text-[13.5px] font-normal tracking-normal mb-2 mt-2">Phone number</label>
             <input 
-              type="tel"
+              type="text"
+              inputMode="numeric"
               placeholder="+234 9000000001"
+              onChange={handlePhoneInput}
+              maxLength={14}
               className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <label className="text-[#888888] font-inter text-[13.5px] font-normal tracking-normal mb-2 mt-4">Password</label>
