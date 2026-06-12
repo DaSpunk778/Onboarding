@@ -2,11 +2,23 @@
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import React from "react";
 
 
 
 export default function PasswordResetPage() {
     const router = useRouter()
+
+const handlePhoneInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const value = e.target.value
+
+  if (/^[+]?[0-9]*$/.test(value)) {
+    e.target.value = value
+  } else {
+    e.target.value = value.replace(/[^0-9+]/g, "")
+  }
+}
+
 
     return (
          <div className="min-h-screen bg-linear-to-b from-[#1D1D1D] via-[#232222] via-10% to-[#181717] text-white flex flex-col items-center">
@@ -34,8 +46,11 @@ export default function PasswordResetPage() {
               Phone Number  
             </label>
             <input
-             type="tel"
-             placeholder="0000000001"
+             type="text"
+             inputMode="numeric"
+             placeholder="+234 0000000001"
+            onChange={handlePhoneInput}
+            maxLength={11}
              className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white placeholder-[#424141] bg outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary mb-8"
           />
 
