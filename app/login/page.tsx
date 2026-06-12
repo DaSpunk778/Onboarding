@@ -45,7 +45,7 @@ const handlePhoneInput = (e: React.ChangeEvent<HTMLInputElement>) => {
               inputMode="numeric"
               placeholder="+234 9000000001"
               onChange={handlePhoneInput}
-              maxLength={14}
+              maxLength={11}
               className="flex flex-row w-full max-w-90 h-fit rounded-[10px] border border-[#383838] p-[6px_8px] gap-1 bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary"
             />
             <label className="text-[#888888] font-inter text-[13.5px] font-normal tracking-normal mb-2 mt-4">Password</label>
