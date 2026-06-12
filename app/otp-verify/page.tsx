@@ -29,7 +29,7 @@ export default function OTPVerifyPage() {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-[#1D1D1D] via-[#232222] via-10% to-[#181717] text-white flex flex-col items-center">
-      <div className="w-full max-w-[390px] bg-linear-to-b from-[#1D1D1D] via-[#1e1e1e] via-15% to-[#000000] flex flex-col min-h-screen">
+      <div className="w-full max-w-97.5 bg-linear-to-b from-[#1D1D1D] via-[#1e1e1e] via-15% to-[#000000] flex flex-col min-h-screen">
 
         
         <div className="flex items-center justify-between px-5 py-4 border-b border-[#303030] bg-[#151515]">
@@ -63,7 +63,7 @@ export default function OTPVerifyPage() {
                 value={digit}
                 onChange={(e) => handleChange(index, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(index, e)}
-                className="w-14 h-14 rounded-[10px] border border-[#303030] bg-transparent text-white text-xl font-bold text-center outline-none transition-all duration-200 focus:border-[#D9E012] focus:ring-1 focus:ring-[#D9E012]"
+                className="w-14 h-14 rounded-[10px] border border-[#303030] bg-transparent text-white text-xl font-bold text-center outline-none transition-all duration-200 focus:border-primary focus:ring-1 focus:ring-primary"
               />
             ))}
           </div>
@@ -73,7 +73,7 @@ export default function OTPVerifyPage() {
             <p className="text-[#888888] text-xs">
               Didn't receive any code? resend in
             </p>
-            <span className="text-[#D9E012] text-xs font-semibold">
+            <span className="text-primary text-xs font-semibold">
               2 minutes
             </span>
           </div>

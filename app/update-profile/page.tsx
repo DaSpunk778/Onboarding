@@ -15,7 +15,7 @@ export default function UpdateProfilePage() {
     if (/^[+]?[0-9]*$/.test(value)) {
       e.target.value = value
     } else {
-      e.target.value = value.replace(/[^0-9]/g, "s")
+      e.target.value = value.replace(/[^0-9]/g, "")
     }
   } 
 

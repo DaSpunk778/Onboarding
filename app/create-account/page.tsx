@@ -1,12 +1,22 @@
 "use client"
 
-import { useState } from "react"
+import React, { useState } from "react"
 import { useRouter } from "next/navigation"
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Replace } from "lucide-react";
 
 export default function CreateAccountPage() {
     const router = useRouter()
     const [agreed, setAgreed] = useState(false)
+
+    const handlePhoneInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
+
+    if (/^[+]?[0-9]*$/.test(value)) {
+      e.target.value = value
+    } else {
+      e.target.value = value.replace(/[^0-9]/g, "")
+    }
+  } 
 
     return (
         <div className="min-h-screen bg-linear-to-b from-[#1D1D1D] via-[#232222] via-10% to-[#181717] text-white flex flex-col items-center">
@@ -59,8 +69,11 @@ export default function CreateAccountPage() {
 
           <label className="text-[#888888] text-xs mb-1">Phone number</label>
             <input
-                type="tel"
+                type="text"
+                inputMode="numeric"
                 placeholder="+234 9000000001"
+                onChange={handlePhoneInput}
+                maxLength={11}
                 className="w-full rounded-[10px] border border-[#383838] p-[6px_8px] bg-[#222222] text-white placeholder-[#424141] outline-none transition-all duration-200 hover:border-primary focus:border-primary focus:ring-1 focus:ring-primary mb-4"
             />
 
