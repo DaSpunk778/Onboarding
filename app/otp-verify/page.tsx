@@ -80,9 +80,9 @@ export default function OTPVerifyPage() {
 
           <button
                 onClick={() => router.push("/otp-verify")}
-                className="w-full h-11.5 mt-30 rounded-xl p-[8px_24px] bg-primary text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50"
+                className="w-full h-11.5 mt-20 rounded-xl p-[8px_24px] bg-primary text-[#3f3e3e] font-bold text-[14px] tracking-[-0.02em] transition-all duration-200 hover:bg-[#c2ca10] active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary/50"
                 >
-                Request OTP
+                Submit
                 </button>
          
 
