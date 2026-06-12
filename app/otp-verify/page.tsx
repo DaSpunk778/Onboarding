@@ -40,7 +40,7 @@ export default function OTPVerifyPage() {
           <div className="w-5" />
         </div>
 
-       <div className="flex flex-col flex-1 items-center justify-start pt-23 px-5 text-center gap-4">
+       <div className="flex flex-col flex-1 items-center justify-start pt-18 px-5 text-center gap-4">
 
           {/* Lock Icon */}
           <div className="w-20 h-20 rounded-full bg-primary-dark flex items-center justify-center mb-8">
